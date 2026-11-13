@@ -1,3 +1,4 @@
+"""
 Professional Bank Customer Churn Prediction Dashboard
 ----------------------------------------------------
 Expected files in the same directory:
@@ -559,3 +560,4 @@ elif page == "Churn Prediction":
 st.sidebar.divider()
 st.sidebar.caption("ANN Bank Churn Prediction • Streamlit")
 st.sidebar.caption(f"Dataset: {len(df):,} customer records")
+"""
