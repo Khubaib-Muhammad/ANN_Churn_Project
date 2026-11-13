@@ -1,7 +1,8 @@
-tensorflow
-pandas
-numpy
-scikit-learn==1.9.1
-joblib==1.6.0
 streamlit
+numpy
+pandas
+tensorflow
 matplotlib
+seaborn
+scikit-learn
+joblib
