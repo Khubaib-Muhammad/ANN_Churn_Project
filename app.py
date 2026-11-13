@@ -55,9 +55,12 @@ RAW_FEATURES = [
 ]
 DROP_COLUMNS = ["RowNumber", "CustomerId", "Surname"]
 
+
 # ----------------------------- Styling -----------------------------
-st.markdown("""
-<style>
+
+st.markdown(
+    """
+    <style>
     .main {
         background-color: #f7f9fc;
     }
@@ -72,14 +75,6 @@ st.markdown("""
         border: 1px solid #e8edf5;
         padding: 16px 18px;
         border-radius: 12px;
-    }
-
-    div[data-testid="stSidebar"] {
-        background: #111827;
-    }
-
-    div[data-testid="stSidebar"] * {
-        color: #f9fafb;
     }
 
     .hero {
@@ -100,13 +95,11 @@ st.markdown("""
         color: #dbeafe;
         margin: 8px 0 0 0;
     }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-    .section-note {
-        color: #64748b;
-        font-size: 0.92rem;
-    }
-</style>
-""", unsafe_allow_html=True)
 
 # ----------------------------- Artifact loading -----------------------------
 @st.cache_resource
