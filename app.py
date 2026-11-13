@@ -55,29 +55,58 @@ RAW_FEATURES = [
 ]
 DROP_COLUMNS = ["RowNumber", "CustomerId", "Surname"]
 
-
 # ----------------------------- Styling -----------------------------
 st.markdown("""
 <style>
-    .main {background-color: #f7f9fc;}
-    .block-container {padding-top: 1.5rem; padding-bottom: 2rem;}
+    .main {
+        background-color: #f7f9fc;
+    }
+
+    .block-container {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
     [data-testid="stMetric"] {
-        background: white; border: 1px solid #e8edf5;
-        padding: 16px 18px; border-radius: 12px;
+        background: white;
+        border: 1px solid #e8edf5;
+        padding: 16px 18px;
+        border-radius: 12px;
     }
-    div[data-testid="stSidebar"] {background: #111827;}
-    div[data-testid="stSidebar"] * {color: #f9fafb;}
+
+    div[data-testid="stSidebar"] {
+        background: #111827;
+    }
+
+    div[data-testid="stSidebar"] * {
+        color: #f9fafb;
+    }
+
     .hero {
-        padding: 24px 28px; border-radius: 16px;
+        padding: 24px 28px;
+        border-radius: 16px;
         background: linear-gradient(120deg, #14213d, #244b78);
-        color: white; margin-bottom: 20px;
+        color: white;
+        margin-bottom: 20px;
     }
-    .hero h1 {color: white; margin: 0; font-size: 2rem;}
-    .hero p {color: #dbeafe; margin: 8px 0 0 0;}
-    .section-note {color: #64748b; font-size: 0.92rem;}
+
+    .hero h1 {
+        color: white;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .hero p {
+        color: #dbeafe;
+        margin: 8px 0 0 0;
+    }
+
+    .section-note {
+        color: #64748b;
+        font-size: 0.92rem;
+    }
 </style>
 """, unsafe_allow_html=True)
-
 
 # ----------------------------- Artifact loading -----------------------------
 @st.cache_resource
